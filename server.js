@@ -3,8 +3,8 @@ const app = express();
 const fs = require('fs');
 
 app.get('/', function(req, res) {
-  res.writeHead(200, {'Content-Type': 'video/mp4'})
-  var rs = fs.createReadStream('assets/video.mp4');
+  res.writeHead(200, { 'Content-Type': 'video/webm'})
+  var rs = fs.createReadStream('assets/video3.mkv');
   rs.pipe(res);
 });
 
